@@ -47,8 +47,8 @@ function module:SetupMastery(abilities)
     game.Players.LocalPlayer.CharacterAdded:Connect(function(chr)
         chr:WaitForChild("Humanoid", 5):GetPropertyChangedSignal("Health"):Connect(function()
             local newval = chr:WaitForChild("Humanoid", 5).Health
-            if newval =< 0 then
-                activateAbility(abilities.onReset)
+            if newval <= 0 then
+                activateAbility(abilities.onDeath)
             end
         end)
     end)
