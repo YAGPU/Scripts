@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet(“https://raw.githubusercontent.com/YAGPU/Scripts/main/Ability%20Wars/Ability%20Mastery%20Creator.lua”, true))()
+local Library = loadstring(game:HttpGet(“https://raw.githubusercontent.com/YAGPU/Scripts/main/AbilityWars/AbilityMasteryCreator.lua”, true))()
 
 local MasteryTable = {
   E = false,
