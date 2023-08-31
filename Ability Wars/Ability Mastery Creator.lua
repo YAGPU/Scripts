@@ -20,9 +20,9 @@ function module:SetupMastery(abilities)
     coroutine.resume(coroutine.create(function()
         while wait() do
             if not isInLobby() and doesEquip(abilities.Base) then
-                game:GetService("Players").LocalPlayer.PlayerGui["Ability Buttons"].Q.Visible = abilities.Q
-                game:GetService("Players").LocalPlayer.PlayerGui["Ability Buttons"].R.Visible = abilities.R
-                game:GetService("Players").LocalPlayer.PlayerGui["Ability Buttons"].E.Visible = abilities.E
+                if abilities.Q == true then game:GetService("Players").LocalPlayer.PlayerGui["Ability Buttons"].Q.Visible = true end
+                if abilities.R == true then game:GetService("Players").LocalPlayer.PlayerGui["Ability Buttons"].R.Visible = true end
+                if abilities.E == true then game:GetService("Players").LocalPlayer.PlayerGui["Ability Buttons"].E.Visible = true end
             elseif isInLobby() then
                 game:GetService("Players").LocalPlayer.PlayerGui["Ability Buttons"].Q.Visible = false
                 game:GetService("Players").LocalPlayer.PlayerGui["Ability Buttons"].R.Visible = false
