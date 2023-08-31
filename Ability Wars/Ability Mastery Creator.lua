@@ -48,7 +48,7 @@ function module:SetupMastery(abilities)
         chr:WaitForChild("Humanoid", 5):GetPropertyChangedSignal("Health"):Connect(function()
             local newval = chr:WaitForChild("Humanoid", 5).Health
             if newval == 0 then
-                workspace.Gravity = 196.2
+                activateAbility(abilities.onReset)
             end
         end)
     end)
