@@ -1,6 +1,6 @@
 local module = {}
 
-function module:SetupMastery(abilities)
+function module:Master(abilities)
     local UIS = game:GetService("UserInputService")
 
     local function isInLobby()
